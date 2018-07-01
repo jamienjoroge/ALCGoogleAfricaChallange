@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+   <LinearLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:padding="5dp">
+
+       <TextView
+           android:id="@+id/quiz"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:paddingLeft="10dp"
+           android:text="Quiz"
+           android:textStyle="bold"
+           android:textSize="18sp" />
+       <TextView
+           android:id="@+id/question1"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:paddingLeft="10dp"
+           android:layout_marginTop="24dp"
+           android:layout_marginBottom="8dp"
+           android:textSize="16sp"
+           android:text="1. Which the Largest Country in Africa?"/>
+       <RadioGroup
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:orientation="vertical">
+           <RadioButton
+               android:id="@+id/question1_choice1"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Nigeria"/>
+           <RadioButton
+               android:id="@+id/question1_choice2"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="5dp"
+               android:text="Sudan"/>
+           <RadioButton
+               android:id="@+id/question1_choice3"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="5dp"
+               android:text="Algeria"/>
+
+       </RadioGroup>
+       <TextView
+           android:id="@+id/question2"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:paddingLeft="10dp"
+           android:layout_marginTop="24dp"
+           android:layout_marginBottom="8dp"
+           android:textSize="16sp"
+           android:text="2. Name Kenya's Capital City"/>
+       <EditText
+           android:id="@+id/question2_text"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:inputType="text"/>
+       <TextView
+           android:id="@+id/question3"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:paddingLeft="10dp"
+           android:layout_marginTop="24dp"
+           android:layout_marginBottom="8dp"
+           android:textSize="16sp"
+           android:text="3. Which of The Following Are Kenya's Former Presidents"/>
+       <CheckBox
+           android:id="@+id/question3_check1"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Nelson Mandela" />
+       <CheckBox
+           android:id="@+id/question3_check2"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Mwai Kibaki" />
+       <CheckBox
+           android:id="@+id/question3_check3"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Jommo Kenyatta" />
+       <CheckBox
+           android:id="@+id/question3_check4"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Yoweri Museveni" />
+       <TextView
+           android:id="@+id/question4"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:paddingLeft="10dp"
+           android:layout_marginTop="24dp"
+           android:layout_marginBottom="8dp"
+           android:textSize="16sp"
+           android:text="4. In which Year did kenya gain independence"/>
+       <RadioGroup
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content">
+           <RadioButton
+               android:id="@+id/question4_choice1"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="1963"/>
+           <RadioButton
+               android:id="@+id/question4_choice2"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="1964"/>
+       </RadioGroup>
+
+       <TextView
+           android:id="@+id/question5"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:paddingLeft="10dp"
+           android:layout_marginTop="24dp"
+           android:layout_marginBottom="8dp"
+           android:textSize="16sp"
+           android:text="5. Which of the following is Kenya's Largest city"/>
+       <RadioGroup
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:orientation="vertical">
+           <RadioButton
+               android:id="@+id/question5_choice1"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Kisumu"/>
+           <RadioButton
+               android:id="@+id/question5_choice2"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="5dp"
+               android:text="Mombasa"/>
+           <RadioButton
+               android:id="@+id/question5_choice3"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="5dp"
+               android:text="Nairobi"/>
+
+       </RadioGroup>
+       <Button
+           android:theme="@style/MyButton"
+           android:id="@+id/submit_button"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Submit"
+           android:onClick="checkScore"/>
+
+   </LinearLayout>
+
+</ScrollView>
